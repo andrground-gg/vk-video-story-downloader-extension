@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "VK Video Download",
+	"version" : "1.5.0",
+	"icons": { 
+		"16": "icons/icon16.png",
+		"48": "icons/icon48.png",
+	   "128": "icons/icon128.png" 
+	},
+	"background": {
+		"scripts":["background.js"]
+	},
+	"content_scripts":[
+		{
+			"matches":["https://vk.com/*"],
+			"js":["index.js", "video-script.js", "story-script.js"]
+		}
+	],
+	"browser_action":{
+		"default_title":"VK Video Download"
+	},
+	"permissions": [
+		"tabs",
+        "https://*/"
+	]
+}
