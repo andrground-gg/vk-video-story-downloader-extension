@@ -2,6 +2,7 @@ function createStoryButton() {
 	let downloadBtn = document.createElement('div');
 	downloadBtn.classList.add('StoryButton');
 	downloadBtn.classList.add('StoryButton--download');
+	downloadBtn.classList.add('StoryBottomControl');
 	/*White download icon inverted*/
 	downloadBtn.innerHTML = `<img src="https://img.icons8.com/android/24/000000/download.png" style="filter:invert(100%)">`
 
